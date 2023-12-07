@@ -1,4 +1,4 @@
 # created by virtualenv automatically
 lib/
 env/
-DS_Store
+.DS_Store
